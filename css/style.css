@@ -28,7 +28,7 @@
   --visit-padding-reveal: 27px 94px;
   --visit-padding: 48px 94px;
   --service-padding: 25vh 0 90px 0;
-  --textimony-padding: 25vh 0 25vh 0;
+  --testimony-padding: 25vh 0 25vh 0;
   /**background-color*/
   --dark: #0b1416;
   --gold: #c6a16e;
@@ -972,7 +972,7 @@ footer {
     --bigger-text: 30px;
     --header-img-w: 100%;
 
-    --textimony-padding: 15vh 0 10vh 0;
+    --testimony-padding: 15vh 0 10vh 0;
   }
 
 

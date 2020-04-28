@@ -1,5 +1,5 @@
 :root {
-  --textimony-padding: 25vh 0 25vh 0;
+  --testimony-padding: 25vh 0 25vh 0;
   --dark: #0b1416;
   --gold: #c6a16e;
 }
@@ -12,7 +12,7 @@
 
 .testimony {
   background-color: var(--dark);
-  padding: var(--textimony-padding);
+  padding: var(--testimony-padding);
 }
 .swiper-container {
   height: 559px;
@@ -72,7 +72,7 @@
   }
 @media screen and (max-width: 768px) {
   :root {
-    --textimony-padding: 15vh 0 10vh 0;
+    --testimony-padding: 15vh 0 10vh 0;
   }
 
   .testimony-slider-container {
