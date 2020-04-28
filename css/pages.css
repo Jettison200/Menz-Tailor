@@ -1,0 +1,75 @@
+:root{
+    --dark: #0b1416;
+    --gold: #c6a16e;
+    --joseph: "Josefin Sans", sans-serif;
+}
+
+.header-img {
+    background-image: url(/img/hero/about.jpg);
+}
+
+.page-container{
+background-color: var(--dark);
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.page-container div{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+}
+
+.page-container div h1{
+    color: var(--gold);
+    font-family: var(--joseph);
+    line-height: 1.5;
+        font-size: 50px;
+}
+
+.page-links{
+    text-transform: capitalize;
+    padding: 15px 0;
+    font-size: 30px;
+    color: var(--gold);
+    text-decoration: none;
+    font-family: var(--joseph);
+}
+
+span{
+    font-size: 18px;
+}
+
+.page-container{
+    padding: 0 60px;
+}
+
+.divider{
+    display: block;
+    height: 10px solid #c6a16e;
+       width: 100%;
+       margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+    .page-container{
+        background-color: var(--dark);
+    }
+    span{
+        font-size: 16px;
+    }
+    .page-container div h1{
+        font-size: 30px;
+    }
+    .page-container div{
+        margin: 60px 0;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .page-container{
+        padding: 0 30px;
+    }
+}

@@ -1,0 +1,148 @@
+:root {
+  --width: 800px;
+  --gold: #c6a16e;
+}
+.header-img {
+  background-image: url(/img/hero/about.jpg);
+}
+
+/**History*/
+
+.history {
+  background-color: var(--dark);
+  padding: 20vh 0;
+}
+
+.history-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.history-vid {
+  height: 483px;
+  width: var(--width);
+  background-image: url(/img/gallery/videobg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulse-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulse {
+  border-radius: 50%;
+  border: 5px solid transparent;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: -1;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  transition: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  0% {
+    border: 5px solid var(--gold);
+  }
+
+  40% {
+    width: 140px;
+    height: 140px;
+    border: 0px solid transparent;
+  }
+}
+
+.play-icon {
+  color: white;
+  font-size: 80px;
+  transition: 0.5s all ease-in-out;
+}
+
+.play-icon:hover {
+  color: var(--gold);
+}
+
+.pulse-container:hover .pulse {
+  animation-name: pulse-white;
+}
+
+@keyframes pulse-white {
+  0% {
+    border: 5px solid white;
+  }
+
+  40% {
+    width: 140px;
+    height: 140px;
+    border: 0px solid transparent;
+  }
+}
+.history-text-bg {
+  height: 100%;
+  width: var(--width);
+  background-color: #f4efe6;
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.history-text {
+  width: 500px;
+  margin: 60px;
+}
+
+.history-text h3 {
+  font-family: var(--joseph);
+  font-size: var(--bigger-text);
+  text-align: center;
+}
+
+.history-text p {
+  font-size: var(--text);
+  margin: 28px 0 30px 0;
+  line-height: 2;
+}
+
+@media screen and (max-width: 1120px) {
+  :root {
+    --width: 80vw;
+  }
+
+  .history {
+    padding: 15vh 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .history {
+    padding: 10vh 0;
+  }
+  .history-text-bg {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .history {
+    padding: 10vh 0;
+  }
+  .history-text {
+    margin: 60px 30px 30px 30px;
+  }
+  
+.history-text h3 {
+    text-align: left;
+  }
+}
+
