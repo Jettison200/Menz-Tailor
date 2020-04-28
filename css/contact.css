@@ -12,7 +12,7 @@
 .contact-container {
   height: 100%;
   background-color: var(--dark);
-  padding: var(--textimony-padding);
+  padding: var(--testimony-padding);
 }
 
 .contact-us {
