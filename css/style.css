@@ -522,7 +522,7 @@ nav > ul {
 /**Testimony*/
 .testimony {
   background-color: var(--dark);
-  padding: var(--textimony-padding);
+  padding: var(--testimony-padding);
 }
 .swiper-container {
   height: 559px;
@@ -619,7 +619,7 @@ nav > ul {
 /**Testimony slider*/
 
 .testimony-slider-container {
-  padding: var(--textimony-padding);
+  padding: var(--testimony-padding);
   background-color: var(--dark);
 }
 
